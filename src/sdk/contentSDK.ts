@@ -1,7 +1,7 @@
 import {ChannelCredentials, makeClientConstructor, ServiceError} from '@grpc/grpc-js';
 import {ContentClient, ContentService, ContentRequest, ContentResponse} from 'api-proto';
 
-export class Sdk {
+export class ContentSDK {
 	client: ContentClient;
 
 	constructor(address: string) {
@@ -22,13 +22,13 @@ export class Sdk {
 	}
 
 	async getContent(): Promise<string> {
-		let request = new ContentRequest();
+		const request = new ContentRequest();
 		return new Promise((resolve, reject) => {
 			this.client.getContent(request, (error: ServiceError | null, response: ContentResponse): void => {
 				if (error) {
 					return reject(error);
 				}
-				let content = response.getContent();
+				const content = response.getContent();
 				resolve(content);
 			});
 		});

@@ -1,1 +1,1 @@
-export {Sdk} from './sdk/sdk';
+export {ContentSDK} from './sdk/contentSDK';
