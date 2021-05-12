@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@grpc/grpc-js": "1.0.5",
+    "@grpc/grpc-js": "1.1.8",
     "api-proto": "git+https://github.com/boinged/api-proto.git#v1.0.0",
     "google-auth-library": "6.0.1",
     "google-protobuf": "3.12.2"
