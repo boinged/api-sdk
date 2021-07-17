@@ -1,20 +1,19 @@
 {
   "dependencies": {
-    "@grpc/grpc-js": "1.0.5",
+    "@grpc/grpc-js": "1.3.5",
     "api-proto": "git+https://github.com/boinged/api-proto.git#v1.0.0",
-    "google-auth-library": "6.0.1",
-    "google-protobuf": "3.12.2"
+    "google-protobuf": "3.17.3"
   },
   "description": "api sdk",
   "devDependencies": {
-    "@types/google-protobuf": "3.7.2",
-    "@types/node": "14.0.11",
-    "@typescript-eslint/eslint-plugin": "2.33.0",
-    "@typescript-eslint/parser": "2.33.0",
-    "eslint": "6.8.0",
-    "eslint-plugin-import": "2.20.2",
-    "rimraf": "3.0.2",
-    "typescript": "3.9.5"
+    "@types/google-protobuf": "^3.15.3",
+    "@types/node": "^16.3.3",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.30.0",
+    "eslint-plugin-import": "^2.23.4",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.5"
   },
   "license": "ISC",
   "main": "dist/index.js",
